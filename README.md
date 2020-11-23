@@ -1,4 +1,4 @@
-# payrobot
+# Payrobot Python SDK
 # Introduction
 Accept, store, send or forward Bitcoin, Litecoin and Bitcoin Cash for your website or app and protect your privacy.
 
