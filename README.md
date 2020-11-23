@@ -130,11 +130,11 @@ with payrobot.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = payrobot.PaymentApi(api_client)
     currency = 'btc' # str | Object Currency:   * `btc`: Bitcoin   * `ltc`: Litecoin   * `bch`: Bitcoin Cash 
-type = 0 # int | * `0: Receive and forward` payment is forwarded to a desired coin address once it's confirmed  * `1: Receive and store` payment is stored in a payrobot.io wallet 
-destination = 'bc1qzlza4ke65fa2sqacjfu5vtwy8ar6x8xttgk999' # str | * For `Receive and forward` payment is the `ADDRESS` where the payment is going to be forwarded as soon as it's confirmed. **ADDRESS HAS TO BE OF THE SAME TYPE OF CURRENCY**  * For `Receive and store` payment is the payrobot.io `WALLET ID` where the payment is going to be stored as soon as it's confirmed. **WALLET HAS TO BE OF THE SAME TYPE OF CURRENCY** 
-amount = 0.0129 # float | Amount of the payment
-param_callback = 'https://your-callback-url.com' # str | Your URL where payrobot.io will send the status of the payment (Webhook)
-reference = 'Bill123' # str | Optional custom reference to identify the payment (optional)
+    type = 0 # int | * `0: Receive and forward` payment is forwarded to a desired coin address once it's confirmed  * `1: Receive and store` payment is stored in a payrobot.io wallet 
+    destination = 'bc1qzlza4ke65fa2sqacjfu5vtwy8ar6x8xttgk999' # str | * For `Receive and forward` payment is the `ADDRESS` where the payment is going to be forwarded as soon as it's confirmed. **ADDRESS HAS TO BE OF THE SAME TYPE OF CURRENCY**  * For `Receive and store` payment is the payrobot.io `WALLET ID` where the payment is going to be stored as soon as it's confirmed. **WALLET HAS TO BE OF THE SAME TYPE OF CURRENCY** 
+    amount = 0.0129 # float | Amount of the payment
+    param_callback = 'https://your-callback-url.com' # str | Your URL where payrobot.io will send the status of the payment (Webhook)
+    reference = 'Bill123' # str | Optional custom reference to identify the payment (optional)
 
     try:
         # Generate a new one-use address to receive a payment
